@@ -1,17 +1,13 @@
-html {
-    overflow: hidden;
-}
-
-body {
-    position: relative;
-}
-
-iframe {
+.iframe-three {
     z-index: 999;
     position: relative;
 }
 
-.progress {
+html {
+    overflow-y: hidden;
+}
+
+.progress-loader {
     position: absolute;
     top: -400;
     left: 50%;
@@ -23,11 +19,11 @@ iframe {
     border: 1.6px solid;
     position: relative;
     z-index: 1000;
-    animation: opaciti-anime 6s;
+    animation: opacity-anime 6s;
     animation-fill-mode: forwards;
     }
 
-.progress::before {
+.progress-loader::before {
     content: "";
     position: absolute;
     margin: 1.6px;
@@ -43,8 +39,16 @@ iframe {
     }
 }
 
-@keyframes opaciti-anime {
+@keyframes opacity-anime {
     0%{opacity: 1;}
     100%{opacity: 0;}
 }
 
+
+audio{
+    position: absolute;
+    z-index: 1000;
+    right: 10;
+    bottom: 14;
+    width: 120;
+}

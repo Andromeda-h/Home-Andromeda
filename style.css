@@ -1,41 +1,36 @@
-html {
-  overflow: hidden;
-}
-
-body {
-  position: relative;
-  background-color: black;
-}
-
-iframe {
+.iframe-three {
   z-index: 999;
   position: relative;
 }
 
-.progress {
+html {
+  overflow-y: hidden;
+}
+
+.progress-loader {
   position: absolute;
   top: -400;
   left: 50%;
   transform: translateX(-50%);
   width: 96px;
-  height: 15px;
+  height: 17.6px;
   border-radius: 16px;
   color: #6c53c8;
   border: 1.6px solid;
   position: relative;
   z-index: 1000;
-  animation: opaciti-anime 11s;
+  animation: opacity-anime 6s;
   animation-fill-mode: forwards;
 }
 
-.progress::before {
+.progress-loader::before {
   content: "";
   position: absolute;
   margin: 1.6px;
   inset: 0 100% 0 0;
   border-radius: inherit;
   background: currentColor;
-  animation: progress-pf82op 11s;
+  animation: progress-pf82op 2.8s;
 }
 
 @keyframes progress-pf82op {
@@ -43,22 +38,20 @@ iframe {
     inset: 0;
   }
 }
-@keyframes opaciti-anime {
+@keyframes opacity-anime {
   0% {
     opacity: 1;
   }
-  50%{opacity: 1;}
   100% {
     opacity: 0;
   }
 }
-
-audio{
+audio {
   position: absolute;
   z-index: 1000;
   right: 10;
-  bottom: 30;
-  width: 110;
+  bottom: 14;
+  width: 120;
 }
 
 /*# sourceMappingURL=style.css.map */
