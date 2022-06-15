@@ -4,6 +4,7 @@ html {
 
 body {
   position: relative;
+  background-color: black;
 }
 
 iframe {
@@ -17,7 +18,7 @@ iframe {
   left: 50%;
   transform: translateX(-50%);
   width: 96px;
-  height: 17.6px;
+  height: 15px;
   border-radius: 16px;
   color: #6c53c8;
   border: 1.6px solid;
@@ -34,7 +35,7 @@ iframe {
   inset: 0 100% 0 0;
   border-radius: inherit;
   background: currentColor;
-  animation: progress-pf82op 2.8s;
+  animation: progress-pf82op 6s;
 }
 
 @keyframes progress-pf82op {
@@ -46,6 +47,7 @@ iframe {
   0% {
     opacity: 1;
   }
+  50%{opacity: 1;}
   100% {
     opacity: 0;
   }
