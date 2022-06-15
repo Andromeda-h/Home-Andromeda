@@ -53,4 +53,12 @@ iframe {
   }
 }
 
+audio{
+  position: absolute;
+  z-index: 1000;
+  right: 10;
+  bottom: 30;
+  width: 110;
+}
+
 /*# sourceMappingURL=style.css.map */
