@@ -19,7 +19,7 @@ html {
   border: 1.6px solid;
   position: relative;
   z-index: 1000;
-  animation: opacity-anime 6s;
+  animation: opacity-anime 11s;
   animation-fill-mode: forwards;
 }
 
@@ -30,7 +30,7 @@ html {
   inset: 0 100% 0 0;
   border-radius: inherit;
   background: currentColor;
-  animation: progress-pf82op 2.8s;
+  animation: progress-pf82op 11s;
 }
 
 @keyframes progress-pf82op {
